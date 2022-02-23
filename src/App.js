@@ -1,23 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      Hello world!
+      {console.log(process.env.REACT_APP_SOME_VALUE)}
+      {console.log(process.env.REACT_APP_FIREBASE_CONFIG)}
+      {process.env.REACT_APP_SOME_VALUE}
+      <p>...</p>
     </div>
   );
 }
